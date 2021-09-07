@@ -14,7 +14,7 @@ end
 
 function p2:movement()
 
-   function love.mousemoved( x, y, dx, dy, touch)
+   function p2:mousemoved( x, y, dx, dy, touch)
       if x > love.graphics.getWidth() / 2 then
       self.y = y
       end
