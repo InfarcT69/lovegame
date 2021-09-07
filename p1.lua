@@ -14,13 +14,13 @@ function p1:update(dt)
    p1:movement()
 end
 
-function p1:movement()
-
-   function p1:mousemoved( x, y, dx, dy, touch)
-      if x < love.graphics.getWidth() / 2 then
+function p1:mousemoved( x, y, dx, dy, touch)
+   if x < love.graphics.getWidth() / 2 then
       self.y = y
-      end
    end
+end
+
+function p1:movement()
    
    if self.y < 0 then
    self.y = 0
