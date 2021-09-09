@@ -6,18 +6,20 @@ function p1:load()
    self.w = 20
    self.h = 100
    
-   none = love.graphics.getWidth() / 2
-   
 end
 
 function p1:update(dt)
    p1:movement()
 end
 
+
+
 function p1:mousemoved( x, y, dx, dy, touch)
-   if x < love.graphics.getWidth() / 2 then
-      self.y = y
+   if ball.y <  love.graphics.getHeight() / 2 then
+    self.y = y
    end
+   
+  
 end
 
 function p1:movement()

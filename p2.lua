@@ -13,8 +13,8 @@ function p2:update(dt)
 end
 
 function p2:mousemoved( x, y, dx, dy, touch)
-   if x > love.graphics.getWidth() / 2 then
-      self.y = y
+   if ball.y > love.graphics.getHeight() / 2 then
+   self.y = y
    end
 end
 
